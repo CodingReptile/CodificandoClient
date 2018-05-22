@@ -13,6 +13,7 @@
 		0DFBE94220AFF8F700773A55 /* CodificandoClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE94020AFF8F700773A55 /* CodificandoClient.xcdatamodeld */; };
 		0DFBE94420AFF8F800773A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DFBE94320AFF8F800773A55 /* Assets.xcassets */; };
 		0DFBE94720AFF8F800773A55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFBE94520AFF8F800773A55 /* LaunchScreen.storyboard */; };
+		0DFBE94F20AFF93900773A55 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE94E20AFF93900773A55 /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0DFBE94320AFF8F800773A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DFBE94620AFF8F800773A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DFBE94820AFF8F800773A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DFBE94E20AFF93900773A55 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		0DFBE92D20AFF8F700773A55 = {
 			isa = PBXGroup;
 			children = (
+				0DFBE95020B0005500773A55 /* Networking */,
 				0DFBE93820AFF8F700773A55 /* CodificandoClient */,
 				0DFBE93720AFF8F700773A55 /* Products */,
 			);
@@ -65,6 +68,14 @@
 				0DFBE94020AFF8F700773A55 /* CodificandoClient.xcdatamodeld */,
 			);
 			path = CodificandoClient;
+			sourceTree = "<group>";
+		};
+		0DFBE95020B0005500773A55 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0DFBE94E20AFF93900773A55 /* NetworkClient.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				0DFBE93C20AFF8F700773A55 /* ViewController.swift in Sources */,
 				0DFBE94220AFF8F700773A55 /* CodificandoClient.xcdatamodeld in Sources */,
 				0DFBE93A20AFF8F700773A55 /* AppDelegate.swift in Sources */,
+				0DFBE94F20AFF93900773A55 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
