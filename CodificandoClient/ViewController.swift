@@ -17,8 +17,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func CreateConnection(_ sender: UIButton) {
-        self.networkClient.InitializeConnection()
-        self.networkClient.WriteToStream()
+        //self.networkClient.InitializeConnection()
+        //self.networkClient.WriteToStream()
+
+        
     }
     
 }

@@ -1,0 +1,6 @@
+framework module Pods_CodificandoClient {
+  umbrella header "Pods-CodificandoClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

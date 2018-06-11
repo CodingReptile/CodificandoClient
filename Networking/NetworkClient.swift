@@ -14,6 +14,8 @@ class NetworkClient : NSObject, StreamDelegate
     var inputStream: InputStream!
     var outputStream: OutputStream!
     let maxReadLength = 4096
+    static let host: String = "www.google.com"
+    static let port: UInt32 = 80
 
     public func WriteToStream()
     {
@@ -83,7 +85,7 @@ class NetworkClient : NSObject, StreamDelegate
         var writeStream: Unmanaged<CFWriteStream>?
 
         // 2
-        CFStreamCreatePairWithSocketToHost(kCFAllocatorDefault, "192.168.1.58" as CFString, 8888, &readStream, &writeStream)
+        CFStreamCreatePairWithSocketToHost(kCFAllocatorDefault, NetworkClient.host as CFString, NetworkClient.port, &readStream, &writeStream)
         //CFStreamCreatePairWithSocketToHost(kCFAllocatorDefault, "www.google.com" as CFString, 80, &readStream, &writeStream)
 
         inputStream = readStream!.takeRetainedValue()

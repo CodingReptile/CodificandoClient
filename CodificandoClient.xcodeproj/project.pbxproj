@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DCA4CA320CDFC390084E246 /* SocketIOInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA4CA220CDFC390084E246 /* SocketIOInterface.swift */; };
+		0DCA4CBB20CE5B390084E246 /* Pods_CodificandoClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52B62FB309EE2D6AEF89C22 /* Pods_CodificandoClient.framework */; };
 		0DFBE93A20AFF8F700773A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE93920AFF8F700773A55 /* AppDelegate.swift */; };
 		0DFBE93C20AFF8F700773A55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE93B20AFF8F700773A55 /* ViewController.swift */; };
 		0DFBE93F20AFF8F700773A55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFBE93D20AFF8F700773A55 /* Main.storyboard */; };
@@ -16,7 +18,33 @@
 		0DFBE94F20AFF93900773A55 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE94E20AFF93900773A55 /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0DCA4CB520CE5B350084E246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DCA4CAF20CE5B350084E246 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 74BBCF724B5D3AC23B6165510B258FAB;
+			remoteInfo = "Pods-CodificandoClient";
+		};
+		0DCA4CB720CE5B350084E246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DCA4CAF20CE5B350084E246 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9E4E32A5B8524E42FECA09AD3FD523B6;
+			remoteInfo = "Socket.IO-Client-Swift";
+		};
+		0DCA4CB920CE5B350084E246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DCA4CAF20CE5B350084E246 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7BA9D1DAB23D6C667F95B3045F816B4;
+			remoteInfo = Starscream;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0DCA4CA220CDFC390084E246 /* SocketIOInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOInterface.swift; sourceTree = "<group>"; };
+		0DCA4CAF20CE5B350084E246 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		0DFBE93620AFF8F700773A55 /* CodificandoClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodificandoClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFBE93920AFF8F700773A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DFBE93B20AFF8F700773A55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +54,9 @@
 		0DFBE94620AFF8F800773A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DFBE94820AFF8F800773A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DFBE94E20AFF93900773A55 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		4CB61CE4C52BFF2D8FE2492C /* Pods-CodificandoClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodificandoClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodificandoClient/Pods-CodificandoClient.debug.xcconfig"; sourceTree = "<group>"; };
+		96456DD090E14DBB3A50DE21 /* Pods-CodificandoClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodificandoClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodificandoClient/Pods-CodificandoClient.release.xcconfig"; sourceTree = "<group>"; };
+		F52B62FB309EE2D6AEF89C22 /* Pods_CodificandoClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodificandoClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,18 +64,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DCA4CBB20CE5B390084E246 /* Pods_CodificandoClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DCA4CA120CDFB560084E246 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0DFBE94E20AFF93900773A55 /* NetworkClient.swift */,
+				0DCA4CA220CDFC390084E246 /* SocketIOInterface.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0DCA4CB020CE5B350084E246 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DCA4CB620CE5B350084E246 /* Pods_CodificandoClient.framework */,
+				0DCA4CB820CE5B350084E246 /* SocketIO.framework */,
+				0DCA4CBA20CE5B350084E246 /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0DFBE92D20AFF8F700773A55 = {
 			isa = PBXGroup;
 			children = (
-				0DFBE95020B0005500773A55 /* Networking */,
+				0DCA4CA120CDFB560084E246 /* Networking */,
 				0DFBE93820AFF8F700773A55 /* CodificandoClient */,
 				0DFBE93720AFF8F700773A55 /* Products */,
+				C52338C3359419E51FA1CCB7 /* Pods */,
+				B8CA1EEE8D96ACE709082832 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,12 +123,22 @@
 			path = CodificandoClient;
 			sourceTree = "<group>";
 		};
-		0DFBE95020B0005500773A55 /* Networking */ = {
+		B8CA1EEE8D96ACE709082832 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0DFBE94E20AFF93900773A55 /* NetworkClient.swift */,
+				0DCA4CAF20CE5B350084E246 /* Pods.xcodeproj */,
+				F52B62FB309EE2D6AEF89C22 /* Pods_CodificandoClient.framework */,
 			);
-			name = Networking;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C52338C3359419E51FA1CCB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CB61CE4C52BFF2D8FE2492C /* Pods-CodificandoClient.debug.xcconfig */,
+				96456DD090E14DBB3A50DE21 /* Pods-CodificandoClient.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DFBE94B20AFF8F800773A55 /* Build configuration list for PBXNativeTarget "CodificandoClient" */;
 			buildPhases = (
+				1BB9DC5F4F8F1A48569E9D36 /* [CP] Check Pods Manifest.lock */,
 				0DFBE93220AFF8F700773A55 /* Sources */,
 				0DFBE93320AFF8F700773A55 /* Frameworks */,
 				0DFBE93420AFF8F700773A55 /* Resources */,
+				3EE7D8F58752BAD75ABD66C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,12 +189,42 @@
 			mainGroup = 0DFBE92D20AFF8F700773A55;
 			productRefGroup = 0DFBE93720AFF8F700773A55 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0DCA4CB020CE5B350084E246 /* Products */;
+					ProjectRef = 0DCA4CAF20CE5B350084E246 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0DFBE93520AFF8F700773A55 /* CodificandoClient */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0DCA4CB620CE5B350084E246 /* Pods_CodificandoClient.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_CodificandoClient.framework;
+			remoteRef = 0DCA4CB520CE5B350084E246 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DCA4CB820CE5B350084E246 /* SocketIO.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketIO.framework;
+			remoteRef = 0DCA4CB720CE5B350084E246 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DCA4CBA20CE5B350084E246 /* Starscream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Starscream.framework;
+			remoteRef = 0DCA4CB920CE5B350084E246 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0DFBE93420AFF8F700773A55 /* Resources */ = {
@@ -144,6 +239,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BB9DC5F4F8F1A48569E9D36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodificandoClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EE7D8F58752BAD75ABD66C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CodificandoClient/Pods-CodificandoClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodificandoClient/Pods-CodificandoClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0DFBE93220AFF8F700773A55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -151,6 +287,7 @@
 			files = (
 				0DFBE93C20AFF8F700773A55 /* ViewController.swift in Sources */,
 				0DFBE94220AFF8F700773A55 /* CodificandoClient.xcdatamodeld in Sources */,
+				0DCA4CA320CDFC390084E246 /* SocketIOInterface.swift in Sources */,
 				0DFBE93A20AFF8F700773A55 /* AppDelegate.swift in Sources */,
 				0DFBE94F20AFF93900773A55 /* NetworkClient.swift in Sources */,
 			);
@@ -294,6 +431,7 @@
 		};
 		0DFBE94C20AFF8F800773A55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB61CE4C52BFF2D8FE2492C /* Pods-CodificandoClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +450,7 @@
 		};
 		0DFBE94D20AFF8F800773A55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96456DD090E14DBB3A50DE21 /* Pods-CodificandoClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
