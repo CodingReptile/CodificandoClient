@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     private var networkClient: NetworkClient = NetworkClient()
+    private var socketIOinterface: SocketIOInterface = SocketIOInterface()
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var connect: UIButton!
@@ -20,7 +21,7 @@ class ViewController: UIViewController {
         //self.networkClient.InitializeConnection()
         //self.networkClient.WriteToStream()
 
-        
+        self.socketIOinterface.SendMessageToServer()
     }
     
 }
