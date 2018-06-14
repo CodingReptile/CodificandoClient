@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DCA4CA320CDFC390084E246 /* SocketIOInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA4CA220CDFC390084E246 /* SocketIOInterface.swift */; };
-		0DCA4CBB20CE5B390084E246 /* Pods_CodificandoClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52B62FB309EE2D6AEF89C22 /* Pods_CodificandoClient.framework */; };
+		0DCA4CBB20CE5B390084E246 /* Pods_CodificandoClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52B62FB309EE2D6AEF89C22 /* Pods_CodificandoClient.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0DFBE93A20AFF8F700773A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE93920AFF8F700773A55 /* AppDelegate.swift */; };
 		0DFBE93C20AFF8F700773A55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE93B20AFF8F700773A55 /* ViewController.swift */; };
 		0DFBE93F20AFF8F700773A55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFBE93D20AFF8F700773A55 /* Main.storyboard */; };
@@ -366,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -420,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -437,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LK8KSVR3Y5;
 				INFOPLIST_FILE = CodificandoClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = myOrg.CodificandoClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LK8KSVR3Y5;
 				INFOPLIST_FILE = CodificandoClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = myOrg.CodificandoClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

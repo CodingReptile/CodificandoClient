@@ -25,23 +25,20 @@ public class SocketIOInterface
         socket.on("state") { data, ack in
 
             let dataArray = data as NSArray
-            let dataArray2 = dataArray[0] as! NSArray
+            let players = dataArray[0] as! NSDictionary
 
-            for entry in dataArray2
+            for (key, value) in players
             {
-                let player = entry as! NSDictionary
+                let socketId = key as! String
+                print("Socket id:" + socketId)
 
-                print(player)
+                let playerPosition = value as! NSDictionary
+                let x = playerPosition["x"] as! Int32
+                let y = playerPosition["y"] as! Int32
 
-                let id = player["id"] as! String?
-                label.text = id
+                print("x:" + String(x))
+                print("y:" + String(y))
             }
-
-            //let dataDictionary = dataArray2[0] as! NSDictionary
-
-
-
-            //print(dataDictionary)
         }
 
         socket.connect()
