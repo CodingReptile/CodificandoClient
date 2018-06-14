@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         //self.networkClient.InitializeConnection()
         //self.networkClient.WriteToStream()
 
-        self.socketIOinterface.SendMessageToServer()
+        self.socketIOinterface.SendMessageToServer(label: self.label)
     }
     
 }
