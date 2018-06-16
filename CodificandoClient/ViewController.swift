@@ -9,19 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    private var networkClient: NetworkClient = NetworkClient()
-    private var socketIOinterface: SocketIOInterface = SocketIOInterface()
-
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var connect: UIButton!
+
+    private var game = Game()
 
 
     @IBAction func CreateConnection(_ sender: UIButton) {
         //self.networkClient.InitializeConnection()
         //self.networkClient.WriteToStream()
 
-        self.socketIOinterface.SendMessageToServer(label: self.label)
+        game.ConnectToServer()
     }
     
 }

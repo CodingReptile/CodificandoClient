@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D796C6920D4D89C002A0E5D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D796C6820D4D89C002A0E5D /* GameView.swift */; };
+		0D796C6B20D4EFE1002A0E5D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D796C6A20D4EFE1002A0E5D /* Game.swift */; };
+		0D796C6E20D4F2E9002A0E5D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D796C6D20D4F2E9002A0E5D /* Configuration.swift */; };
+		0D796C7020D4F4B3002A0E5D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D796C6F20D4F4B3002A0E5D /* Player.swift */; };
 		0DCA4CA320CDFC390084E246 /* SocketIOInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA4CA220CDFC390084E246 /* SocketIOInterface.swift */; };
 		0DCA4CBB20CE5B390084E246 /* Pods_CodificandoClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52B62FB309EE2D6AEF89C22 /* Pods_CodificandoClient.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0DFBE93A20AFF8F700773A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE93920AFF8F700773A55 /* AppDelegate.swift */; };
@@ -43,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D796C6820D4D89C002A0E5D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		0D796C6A20D4EFE1002A0E5D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		0D796C6D20D4F2E9002A0E5D /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		0D796C6F20D4F4B3002A0E5D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0DCA4CA220CDFC390084E246 /* SocketIOInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOInterface.swift; sourceTree = "<group>"; };
 		0DCA4CAF20CE5B350084E246 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		0DFBE93620AFF8F700773A55 /* CodificandoClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodificandoClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +79,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D796C6320D38FE1002A0E5D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				0D796C6820D4D89C002A0E5D /* GameView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		0D796C6720D398C4002A0E5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D796C6A20D4EFE1002A0E5D /* Game.swift */,
+				0D796C6F20D4F4B3002A0E5D /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D796C6C20D4F2D6002A0E5D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0D796C6D20D4F2E9002A0E5D /* Configuration.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		0DCA4CA120CDFB560084E246 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +126,9 @@
 		0DFBE92D20AFF8F700773A55 = {
 			isa = PBXGroup;
 			children = (
+				0D796C6C20D4F2D6002A0E5D /* Config */,
+				0D796C6720D398C4002A0E5D /* Model */,
+				0D796C6320D38FE1002A0E5D /* UIView */,
 				0DCA4CA120CDFB560084E246 /* Networking */,
 				0DFBE93820AFF8F700773A55 /* CodificandoClient */,
 				0DFBE93720AFF8F700773A55 /* Products */,
@@ -289,6 +325,10 @@
 				0DFBE94220AFF8F700773A55 /* CodificandoClient.xcdatamodeld in Sources */,
 				0DCA4CA320CDFC390084E246 /* SocketIOInterface.swift in Sources */,
 				0DFBE93A20AFF8F700773A55 /* AppDelegate.swift in Sources */,
+				0D796C6920D4D89C002A0E5D /* GameView.swift in Sources */,
+				0D796C6B20D4EFE1002A0E5D /* Game.swift in Sources */,
+				0D796C6E20D4F2E9002A0E5D /* Configuration.swift in Sources */,
+				0D796C7020D4F4B3002A0E5D /* Player.swift in Sources */,
 				0DFBE94F20AFF93900773A55 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = myOrg.CodificandoClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -465,7 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = myOrg.CodificandoClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
