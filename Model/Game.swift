@@ -27,5 +27,10 @@ class Game
     func ProcessServerChanges(players: [Player]) -> Void
     {
         self.players = players
+
+        for player in players
+        {
+            print(player)
+        }
     }
 }

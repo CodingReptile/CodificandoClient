@@ -17,8 +17,14 @@ public class SocketIOInterface
     {
         let socket = manager.defaultSocket
 
+        socket.on("error") { data, ack in
+            print("Connection error: \(data)")
+        }
+
         socket.on("connect") { data, ack in
             print("Connect just happened")
+
+            socket.emit("new player")
         }
 
         socket.on("state") { data, ack in
@@ -43,6 +49,5 @@ public class SocketIOInterface
         }
 
         socket.connect()
-        socket.emit("new player")
     }
 }
