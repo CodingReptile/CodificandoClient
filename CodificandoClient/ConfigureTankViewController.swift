@@ -92,9 +92,7 @@ class ConfigureTankViewController: UIViewController {
     }
 
     @IBAction func ConfigureTank(_ sender: UIButton) {
-        print("Clicked in button!")
-
-        performSegue(withIdentifier: "Show Game", sender: self)
+        performSegue(withIdentifier: "Show Lobby", sender: self)
     }
 
 }

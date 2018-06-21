@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GameRoom-->
+        <scene sceneID="k7j-mH-p3g">
+            <objects>
+                <viewController storyboardIdentifier="gameView" title="GameRoom" id="HJm-a4-9Kz" customClass="ViewController" customModule="CodificandoClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BCH-22-gLh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0zs-Hw-5cE">
+                                <rect key="frame" x="20" y="40" width="335" height="289.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3C-ME-Cd1" customClass="GameView" customModule="CodificandoClient" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="251.5"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="G3C-ME-Cd1" secondAttribute="height" multiplier="8:6" id="BCK-QE-ahn"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBg-G2-TRb">
+                                        <rect key="frame" x="0.0" y="259.5" width="335" height="30"/>
+                                        <state key="normal" title="Connect"/>
+                                        <connections>
+                                            <action selector="CreateConnection:" destination="HJm-a4-9Kz" eventType="touchUpInside" id="VqR-KO-EKg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7HX-hJ-HDS" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0zs-Hw-5cE" secondAttribute="bottom" constant="20" id="QgT-ha-hGe"/>
+                            <constraint firstItem="7HX-hJ-HDS" firstAttribute="trailing" secondItem="0zs-Hw-5cE" secondAttribute="trailing" constant="20" id="YLg-hy-KtT"/>
+                            <constraint firstItem="0zs-Hw-5cE" firstAttribute="leading" secondItem="7HX-hJ-HDS" secondAttribute="leading" constant="20" id="ih7-gG-xje"/>
+                            <constraint firstItem="0zs-Hw-5cE" firstAttribute="top" secondItem="7HX-hJ-HDS" secondAttribute="top" constant="20" id="kzD-9J-R5V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7HX-hJ-HDS"/>
+                    </view>
+                    <connections>
+                        <outlet property="connect" destination="qBg-G2-TRb" id="IeT-kq-yEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVF-14-g9e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3706" y="135"/>
+        </scene>
+    </scenes>
+</document>
