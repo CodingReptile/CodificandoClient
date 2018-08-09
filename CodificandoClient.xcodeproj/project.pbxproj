@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D3EAF9E2118E54C00E840D8 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EAF9D2118E54C00E840D8 /* NetworkHelper.swift */; };
+		0D3EAFA02118E65F00E840D8 /* GameDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EAF9F2118E65F00E840D8 /* GameDescription.swift */; };
+		0D3EAFA3211A984500E840D8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EAFA2211A984500E840D8 /* GameViewController.swift */; };
+		0D3EAFA5211CADBE00E840D8 /* NewPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EAFA4211CADBE00E840D8 /* NewPlayer.swift */; };
 		0D6D6EF520DB43BD0080CC60 /* LobbyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D6EF420DB43BD0080CC60 /* LobbyTableViewController.swift */; };
 		0D6D6EF720DB4CC50080CC60 /* Lobby.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6D6EF620DB4CC50080CC60 /* Lobby.storyboard */; };
 		0D6D6EF920DB4E7D0080CC60 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6D6EF820DB4E7D0080CC60 /* Game.storyboard */; };
@@ -18,7 +22,6 @@
 		0DCA4CA320CDFC390084E246 /* SocketIOInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA4CA220CDFC390084E246 /* SocketIOInterface.swift */; };
 		0DCA4CBB20CE5B390084E246 /* Pods_CodificandoClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52B62FB309EE2D6AEF89C22 /* Pods_CodificandoClient.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0DFBE93A20AFF8F700773A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE93920AFF8F700773A55 /* AppDelegate.swift */; };
-		0DFBE93C20AFF8F700773A55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE93B20AFF8F700773A55 /* ViewController.swift */; };
 		0DFBE93F20AFF8F700773A55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFBE93D20AFF8F700773A55 /* Main.storyboard */; };
 		0DFBE94220AFF8F700773A55 /* CodificandoClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBE94020AFF8F700773A55 /* CodificandoClient.xcdatamodeld */; };
 		0DFBE94420AFF8F800773A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DFBE94320AFF8F800773A55 /* Assets.xcassets */; };
@@ -51,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D3EAF9D2118E54C00E840D8 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		0D3EAF9F2118E65F00E840D8 /* GameDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDescription.swift; sourceTree = "<group>"; };
+		0D3EAFA2211A984500E840D8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		0D3EAFA4211CADBE00E840D8 /* NewPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayer.swift; sourceTree = "<group>"; };
 		0D6D6EF420DB43BD0080CC60 /* LobbyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyTableViewController.swift; sourceTree = "<group>"; };
 		0D6D6EF620DB4CC50080CC60 /* Lobby.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lobby.storyboard; sourceTree = "<group>"; };
 		0D6D6EF820DB4E7D0080CC60 /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
@@ -63,7 +70,6 @@
 		0DCA4CAF20CE5B350084E246 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		0DFBE93620AFF8F700773A55 /* CodificandoClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodificandoClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFBE93920AFF8F700773A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0DFBE93B20AFF8F700773A55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0DFBE93E20AFF8F700773A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DFBE94120AFF8F700773A55 /* CodificandoClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CodificandoClient.xcdatamodel; sourceTree = "<group>"; };
 		0DFBE94320AFF8F800773A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +93,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D3EAF9721150D6D00E840D8 /* ConfigureTank */ = {
+			isa = PBXGroup;
+			children = (
+				0DFBE93D20AFF8F700773A55 /* Main.storyboard */,
+				0D796C7120D74443002A0E5D /* ConfigureTankViewController.swift */,
+			);
+			path = ConfigureTank;
+			sourceTree = "<group>";
+		};
+		0D3EAF9B21150D9900E840D8 /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				0D6D6EF420DB43BD0080CC60 /* LobbyTableViewController.swift */,
+				0D6D6EF620DB4CC50080CC60 /* Lobby.storyboard */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		0D3EAF9C21150E2300E840D8 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EAFA2211A984500E840D8 /* GameViewController.swift */,
+				0D6D6EF820DB4E7D0080CC60 /* Game.storyboard */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		0D3EAFA1211A723000E840D8 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EAF9F2118E65F00E840D8 /* GameDescription.swift */,
+				0D3EAFA4211CADBE00E840D8 /* NewPlayer.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		0D796C6320D38FE1002A0E5D /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +140,7 @@
 		0D796C6720D398C4002A0E5D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D3EAFA1211A723000E840D8 /* JSON */,
 				0D796C6A20D4EFE1002A0E5D /* Game.swift */,
 				0D796C6F20D4F4B3002A0E5D /* Player.swift */,
 			);
@@ -117,6 +160,7 @@
 			children = (
 				0DFBE94E20AFF93900773A55 /* NetworkClient.swift */,
 				0DCA4CA220CDFC390084E246 /* SocketIOInterface.swift */,
+				0D3EAF9D2118E54C00E840D8 /* NetworkHelper.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -156,17 +200,14 @@
 		0DFBE93820AFF8F700773A55 /* CodificandoClient */ = {
 			isa = PBXGroup;
 			children = (
+				0D3EAF9721150D6D00E840D8 /* ConfigureTank */,
+				0D3EAF9B21150D9900E840D8 /* Lobby */,
+				0D3EAF9C21150E2300E840D8 /* Game */,
 				0DFBE93920AFF8F700773A55 /* AppDelegate.swift */,
-				0DFBE93B20AFF8F700773A55 /* ViewController.swift */,
-				0DFBE93D20AFF8F700773A55 /* Main.storyboard */,
-				0D796C7120D74443002A0E5D /* ConfigureTankViewController.swift */,
 				0DFBE94320AFF8F800773A55 /* Assets.xcassets */,
 				0DFBE94520AFF8F800773A55 /* LaunchScreen.storyboard */,
 				0DFBE94820AFF8F800773A55 /* Info.plist */,
 				0DFBE94020AFF8F700773A55 /* CodificandoClient.xcdatamodeld */,
-				0D6D6EF420DB43BD0080CC60 /* LobbyTableViewController.swift */,
-				0D6D6EF620DB4CC50080CC60 /* Lobby.storyboard */,
-				0D6D6EF820DB4E7D0080CC60 /* Game.storyboard */,
 			);
 			path = CodificandoClient;
 			sourceTree = "<group>";
@@ -335,12 +376,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3EAFA3211A984500E840D8 /* GameViewController.swift in Sources */,
+				0D3EAFA5211CADBE00E840D8 /* NewPlayer.swift in Sources */,
 				0D6D6EF520DB43BD0080CC60 /* LobbyTableViewController.swift in Sources */,
-				0DFBE93C20AFF8F700773A55 /* ViewController.swift in Sources */,
 				0DFBE94220AFF8F700773A55 /* CodificandoClient.xcdatamodeld in Sources */,
 				0DCA4CA320CDFC390084E246 /* SocketIOInterface.swift in Sources */,
+				0D3EAF9E2118E54C00E840D8 /* NetworkHelper.swift in Sources */,
 				0DFBE93A20AFF8F700773A55 /* AppDelegate.swift in Sources */,
 				0D796C6920D4D89C002A0E5D /* GameView.swift in Sources */,
+				0D3EAFA02118E65F00E840D8 /* GameDescription.swift in Sources */,
 				0D796C6B20D4EFE1002A0E5D /* Game.swift in Sources */,
 				0D796C6E20D4F2E9002A0E5D /* Configuration.swift in Sources */,
 				0D796C7220D74443002A0E5D /* ConfigureTankViewController.swift in Sources */,

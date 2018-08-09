@@ -12,4 +12,8 @@ class Configuration
 {
     static let ServerUrl = "http://localhost:8888"
     //public let ServerUrl = "https://socketio20180530062155.azurewebsites.net"
+
+    static let GameListUrl = Configuration.ServerUrl + "/game"
+
+    static let GameNamespacePrefix = "/game"
 }

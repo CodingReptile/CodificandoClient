@@ -25,6 +25,8 @@ class ConfigureTankViewController: UIViewController {
 
     @IBOutlet weak var speedSlider: UISlider!
 
+    @IBOutlet weak var nameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,11 +41,6 @@ class ConfigureTankViewController: UIViewController {
 
         speedSlider.minimumValue = 0
         speedSlider.maximumValue = 100
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func ProcessChangeInSlider(_ sender: UISlider) {
@@ -92,7 +89,38 @@ class ConfigureTankViewController: UIViewController {
     }
 
     @IBAction func ConfigureTank(_ sender: UIButton) {
-        performSegue(withIdentifier: "Show Lobby", sender: self)
+        if (self.ValidatePlayerData())
+        {
+            performSegue(withIdentifier: "Show Lobby", sender: self)
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? LobbyTableViewController
+        {
+            let playerData = NewPlayerData(name: nameTextField.text!, speed: speedCount, attack: attackCount, defense: defenseCount)
+            dest.playerData = playerData
+        }
+    }
+
+    private func ValidatePlayerData() -> Bool
+    {
+        if (self.attackCount + self.speedCount + self.defenseCount != 100)
+        {
+            return false
+        }
+
+        guard let name = nameTextField.text else
+        {
+            return false
+        }
+
+        if name.trimmingCharacters(in: CharacterSet.whitespaces).isEmpty
+        {
+            return false
+        }
+
+        return true
     }
 
 }

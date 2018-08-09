@@ -13,18 +13,22 @@ public class SocketIOInterface
 {
     let manager = SocketManager(socketURL: URL(string: Configuration.ServerUrl)!)
 
-    func StartCommunication(callBackFunction: @escaping ([Player]) -> Void)
+    func StartCommunication(callBackFunction: @escaping ([Player]) -> Void, namespace: String?, playerData: NewPlayerData)
     {
-        let socket = manager.defaultSocket
+        var socket = manager.defaultSocket
+        if let nps = namespace
+        {
+            socket = manager.socket(forNamespace: nps)
+        }
 
         socket.on("error") { data, ack in
             print("Connection error: \(data)")
         }
 
         socket.on("connect") { data, ack in
-            print("Connect just happened")
+            print("Connected")
 
-            socket.emit("new player")
+            socket.emit("new player", playerData)
         }
 
         socket.on("state") { data, ack in

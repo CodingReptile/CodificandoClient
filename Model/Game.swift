@@ -19,9 +19,9 @@ class Game
         socketIOinterface = SocketIOInterface()
     }
 
-    func ConnectToServer()
+    func ConnectToServer(gameName: String, playerData: NewPlayerData)
     {
-        socketIOinterface.StartCommunication(callBackFunction: ProcessServerChanges)
+        socketIOinterface.StartCommunication(callBackFunction: ProcessServerChanges, namespace: Configuration.GameNamespacePrefix + gameName, playerData: playerData)
     }
 
     func ProcessServerChanges(players: [Player]) -> Void
